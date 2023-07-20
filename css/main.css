@@ -1,9 +1,65 @@
 /* Code thành phần cấu hình riêng */
 
 
+/*Slider */
+#Slider {
+    overflow: hidden;
+}
 
+.aspect-radio-169 {
+    display: block;
+    position: relative;
+    padding-top: 56.25%;
+    transition: 0.3s;
+    margin-bottom: -256px;
+}
+
+.aspect-radio-169 img {
+    display: block;
+    position: absolute;
+    border-radius: 80px 0px;
+    width: 100%;
+    height: 65%;
+    top: 0;
+    left: 0;
+}
+
+.dot-container {
+    position: absolute;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.dot {
+    height: 11px;
+    width: 11px;
+    background-color: #d1d2d4;
+    border-radius: 50%;
+    margin-top: -30px;
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #fff;
+}
 /* ---------------------------------------------------------------------- */
 /* CONTAINER */
+.category-top {
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+.rows {
+    display: flex;
+    flex-wrap: wrap;
+}
+.container-top {
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
 .app__container{
     background-color: #F5F5F5;
 }
@@ -309,7 +365,7 @@ i.home-product-item__like-icon-fill{
     top: 0;
     right: 0;
     width: 40px;
-    height: 36px;
+    height: 39px;
     color: rgba(255, 216, 64, 0.94);
     background-color: currentColor;
     text-align: center;
@@ -332,7 +388,6 @@ i.home-product-item__like-icon-fill{
     font-size: 12px;
     line-height: 12px;
     position: relative;
-    top: 4px;
 }
 
 .home-product-item__sale-off-label{
@@ -340,7 +395,86 @@ i.home-product-item__like-icon-fill{
     line-height: 13px;
     color: var(--white-color);
     position: relative;
-    top: 4px;
+    top: -6px;
 }
 
+/* detailProduct */
+.product-content-right__rating{
+    /* Thu nhỏ star */
+    font-size: 10px;
+    color: #D5D5D5;
+    margin:0.5px 0 20px auto;
+}
+
+.product-content-right__star--gold{
+    color: var(--star-gold-color);
+}
+
+.product-content-right__sold {
+    font-size: 12px;
+    color: var(--text-color);
+    margin-left: 5px;
+}
+.product-content-right__quatity {
+    display: flex;
+    margin-bottom: 20px;
+}
+.product-content-right__quatity--input {
+    width: 32px;
+    height: 28px;
+    padding-left: 3px;
+}
+.product-content-right__product-button button{
+    width: 150px;
+    height: 40px;
+    display: block;
+    margin: 20px 0 12px;
+    transition: all 0.5s ease;
+}
+
+.product-content-right__product-button button:first-child {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fff;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.product-content-right__product-button button:first-child:hover {
+    background-color: #198754;
+    color: #fff;
+}
+
+/* .product-content-right__product-button button:last-child {
+    border: 2px solid #BF8A49;
+    color: #BF8A49;
+    background-color: #fff;
+} */
+
+.product-content-right__describe {
+    padding-top: 40px;
+    border: 1px solid #dddddd;
+    position: relative;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.product-content-right__describe-top {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #dddddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    top: -15px;
+    left: 50%;
+    border-radius: 50%;
+}
+.product-content-right__describe-content {
+    text-align: center;
+    padding-bottom: 15px;
+}
 

@@ -13,10 +13,12 @@
     --navbar-height: 34px;
     --header-with-search-height: calc(var(--header-height) - var(--navbar-height) + 12px); 
 }
-*{
-    box-sizing: inherit;
-    /* /* kế thừa những thẻ chứa nó * */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
 html{
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
