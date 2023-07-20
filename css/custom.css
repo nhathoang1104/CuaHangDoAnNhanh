@@ -1,0 +1,17 @@
+.footer ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+ }
+ .footer ul>li>a{
+    text-decoration: none;
+    color: white;
+ }
+ .footer ul>li>a:hover{
+color: darkgrey;
+ }
+
+ .header ul>li>a:hover{
+   background-color: rgb(5, 5, 5);
+ }
+
